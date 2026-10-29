@@ -73,10 +73,21 @@
     <p style="margin-top:12px">Honest note: FrameReady can't make your hardware faster than it is. It helps when background apps, low free memory, power settings or heat are holding your games back, which is very common.</p></div>
   </section>
 
+  <section id="virus-scan">
+    <h2>Virus scan proof</h2>
+    <div class="card">
+      <p style="color:var(--text)"><b>VirusTotal (70+ antivirus engines):</b> <a href="https://www.virustotal.com/gui/file/54f94b9e8788730f76f0556a84730174452fdc13c8fbba16293de7af977622d6">see the full public scan report for FrameReady-Setup-1.0.1.exe</a></p>
+      <p style="margin-top:10px"><b style="color:var(--text)">Microsoft Defender:</b> no threats found in the installer or any installed file (definitions 1.463.30.0, scanned 2026-10-29).</p>
+      <p style="margin-top:10px"><b style="color:var(--text)">Check your copy is the genuine one.</b> In PowerShell run <code>Get-FileHash .\FrameReady-Setup-1.0.1.exe</code>. It must match exactly:<br>
+      <code style="word-break:break-all;color:var(--good)">54F94B9E8788730F76F0556A84730174452FDC13C8FBBA16293DE7AF977622D6</code></p>
+      <p style="margin-top:10px">Why is it not code-signed? A signing certificate costs hundreds of dollars a year, which a CA$4.20 app from an independent developer can't cover yet. That's why Windows SmartScreen may warn you. The scans and the hash above let you verify the file yourself.</p>
+    </div>
+  </section>
+
   <section>
     <h2>FAQ</h2>
     <details><summary>Windows says "Windows protected your PC" when I run the installer.</summary>
-      <p>That's Microsoft SmartScreen. It shows for new apps from small developers that don't yet have a paid code-signing certificate. Click <b>More info → Run anyway</b>. FrameReady installs per-user, needs no admin rights, and you can scan the installer on <a href="https://www.virustotal.com/">VirusTotal</a> first.</p></details>
+      <p>That's Microsoft SmartScreen. It shows for new apps from small developers that don't yet have a paid code-signing certificate. Click <b>More info → Run anyway</b>. FrameReady installs per-user, needs no admin rights, and you can see its <a href="#virus-scan">virus scan results</a> first.</p></details>
     <details><summary>Will it break anything?</summary>
       <p>Every change is a normal Windows setting (power plan, Game Mode, the same startup switch Task Manager uses). Game Boost records what it changed and "Restore normal" or uninstalling puts it back.</p></details>
     <details><summary>Which graphics cards work?</summary>
@@ -92,6 +103,6 @@
   </section>
 </main>
 
-<footer class="wrap">FrameReady 1.0.0 · Made by an independent developer in Canada · <a href="https://frameready.gumroad.com/">Store</a></footer>
+<footer class="wrap">FrameReady 1.0.1 · Made by an independent developer in Canada · <a href="https://frameready.gumroad.com/">Store</a></footer>
 </body>
 </html>

@@ -7,9 +7,25 @@
 <meta name="description" content="FrameReady is a small Windows app that shows what is eating your RAM, CPU and GPU in plain English, catches memory leaks, and gets your PC ready for gaming with one reversible click. No registry cleaners, no subscription, no data collection.">
 <meta property="og:title" content="FrameReady – honest PC health monitor &amp; one-click Game Boost">
 <meta property="og:description" content="See what's slowing your PC, catch memory leaks, one-click reversible Game Boost. Private, offline, pay once.">
-<meta property="og:image" content="screenshot.png">
+<meta property="og:image" content="https://dragon12367.github.io/frameready/images/game-boost.png">
+<meta property="og:url" content="https://dragon12367.github.io/frameready/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://dragon12367.github.io/frameready/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FrameReady",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "softwareVersion": "1.2.0",
+  "description": "Windows PC health monitor and one-click reversible Game Boost: shows what is using your RAM, CPU and GPU, catches memory leaks, and reports what held each game back.",
+  "image": "https://dragon12367.github.io/frameready/images/game-boost.png",
+  "screenshot": ["https://dragon12367.github.io/frameready/screenshot.png", "https://dragon12367.github.io/frameready/images/game-boost.png", "https://dragon12367.github.io/frameready/images/assistant.png", "https://dragon12367.github.io/frameready/images/history.png"],
+  "offers": {"@type": "Offer", "price": "4.20", "priceCurrency": "CAD", "url": "https://frameready.gumroad.com/l/frameready"}
+}
+</script>
 <link rel="icon" href="favicon.ico">
 <style>
   :root { --bg:#0f1116; --panel:#1b1e27; --text:#e6e8ee; --muted:#9aa1b2; --accent:#4c8dff; --good:#2ecc71; }
@@ -35,6 +51,10 @@
   details { background:var(--panel); border-radius:8px; padding:14px 18px; margin-bottom:10px; }
   summary { cursor:pointer; font-weight:600; }
   details p { color:var(--muted); margin:10px 0 0; }
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+  .gallery figure { margin:0; background:var(--panel); border-radius:8px; overflow:hidden; }
+  .gallery img { display:block; width:100%; height:auto; }
+  .gallery figcaption { color:var(--muted); font-size:14px; padding:10px 14px; }
   footer { color:var(--muted); font-size:14px; text-align:center; padding:40px 0; border-top:1px solid #222633; margin-top:30px; }
 </style>
 </head>
@@ -52,7 +72,7 @@
     <h2>What it does</h2>
     <div class="grid">
       <div class="card"><h3>⚡ One-click Game Boost</h3>
-        <ul><li>High performance power plan, or Best performance power mode on laptops without it</li><li>Windows Game Mode on</li><li>Your game gets Above-normal CPU priority</li><li>Background apps go into Efficiency mode, the same as Task Manager's (never voice chat, streaming, launchers or anti-cheat)</li><li>Games use the fast graphics card on laptops with two</li><li>Closes the background apps <em>you</em> pick, and can reopen them afterwards</li><li>Auto-boosts when a game starts; games it has seen before are recognised in seconds</li><li>"Restore normal" undoes everything</li></ul></div>
+        <ul><li>High performance power plan, or Best performance power mode on laptops without it</li><li>Monitors set to native resolution at their highest refresh rate, fixing a 144/165/180 Hz screen stuck at 60 Hz</li><li>Windows Game Mode and "Optimizations for windowed games" on</li><li>Optional: mouse acceleration off while you play</li><li>Your game gets Above-normal CPU priority</li><li>Background apps go into Efficiency mode, the same as Task Manager's (never voice chat, streaming, launchers or anti-cheat)</li><li>Games use the fast graphics card on laptops with two</li><li>Closes the background apps <em>you</em> pick, and can reopen them afterwards</li><li>Auto-boosts when a game starts; games it has seen before are recognised in seconds</li><li>"Restore normal" undoes the rest (the monitor and windowed-games improvements stay on)</li></ul></div>
       <div class="card"><h3>🎮 After-game report</h3>
         <ul><li>Shows what held your game back: the graphics card, CPU, heat, RAM, graphics memory, or a background app</li><li>Gives specific fixes ("lower texture quality one step", "close OneDrive before playing")</li><li>"Ready to play?" check before you start: on battery, low RAM, a busy app, GPU already hot</li></ul></div>
       <div class="card"><h3>📊 Plain-English dashboard</h3>
@@ -61,6 +81,15 @@
         <ul><li>Memory-leak detector: "this app has grown for hours, restart it"</li><li>Learns your PC's normal and flags unusual background load</li><li>Disk-full forecast</li><li>Ignores brief spikes; alerts only on problems that last</li></ul></div>
       <div class="card"><h3>🤖 Private AI assistant</h3>
         <ul><li>Ask "why do my games lag?" and get an answer from your PC's live data</li><li>Works offline right away</li><li>Optional local AI model (one-time ~2.5 GB download) for chat in 11 languages</li><li>Nothing leaves your computer</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <figure><img src="images/game-boost.png" alt="Game Boost tab: options for power plan, Game Mode, efficiency mode for background apps, game priority and graphics card, a list of apps to close, and the Ready to play check" width="1243" height="814" loading="lazy"><figcaption>Game Boost: pick what it does, check you're ready to play, and see a report after each game.</figcaption></figure>
+      <figure><img src="images/assistant.png" alt="Insights and Assistant tab with quick questions such as Why is my PC slow and Why do my games lag" width="1240" height="809" loading="lazy"><figcaption>Private assistant: ask why your PC or games are slow. It answers from your PC's live data, offline.</figcaption></figure>
+      <figure><img src="images/history.png" alt="24-hour history chart of CPU, RAM, GPU load and GPU temperature" width="1244" height="805" loading="lazy"><figcaption>24-hour history of CPU, RAM, GPU load and GPU temperature.</figcaption></figure>
     </div>
   </section>
 
@@ -78,10 +107,10 @@
   <section id="virus-scan">
     <h2>Virus scan proof</h2>
     <div class="card">
-      <p style="color:var(--text)"><b>VirusTotal (70+ antivirus engines):</b> <a href="https://www.virustotal.com/gui/file/7dd6c9d40fbb07fc3f4c180ab4ad3e1e766d425fbe159ca4c062c1fb87f5ac2b">see the full public scan report for FrameReady-Setup-1.1.0.exe</a>. The link always shows the current result.</p>
+      <p style="color:var(--text)"><b>VirusTotal (70+ antivirus engines):</b> <a href="https://www.virustotal.com/gui/file/f41f382cedbfe029af97044c10a13b6474e772f52542c890d8e952eae5886238">see the full public scan report for FrameReady-Setup-1.2.0.exe</a>. The link always shows the current result.</p>
       <p style="margin-top:10px"><b style="color:var(--text)">Microsoft Defender:</b> no threats found in the installer or any installed file (scanned 2026-10-29).</p>
-      <p style="margin-top:10px"><b style="color:var(--text)">Check your copy is the genuine one.</b> In PowerShell run <code>Get-FileHash .\FrameReady-Setup-1.1.0.exe</code>. It must match exactly:<br>
-      <code style="word-break:break-all;color:var(--good)">7DD6C9D40FBB07FC3F4C180AB4AD3E1E766D425FBE159CA4C062C1FB87F5AC2B</code></p>
+      <p style="margin-top:10px"><b style="color:var(--text)">Check your copy is the genuine one.</b> In PowerShell run <code>Get-FileHash .\FrameReady-Setup-1.2.0.exe</code>. It must match exactly:<br>
+      <code style="word-break:break-all;color:var(--good)">F41F382CEDBFE029AF97044C10A13B6474E772F52542C890D8E952EAE5886238</code></p>
       <p style="margin-top:10px">Why is it not code-signed? A signing certificate costs hundreds of dollars a year, which a CA$4.20 app from an independent developer can't cover yet. That's why Windows SmartScreen may warn you. The scans and the hash above let you verify the file yourself.</p>
     </div>
   </section>
@@ -105,6 +134,6 @@
   </section>
 </main>
 
-<footer class="wrap">FrameReady 1.1.0 · Made by an independent developer in Canada · <a href="https://frameready.gumroad.com/">Store</a></footer>
+<footer class="wrap">FrameReady 1.2.0 · Made by an independent developer in Canada · <a href="https://frameready.gumroad.com/">Store</a></footer>
 </body>
 </html>

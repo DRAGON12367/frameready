@@ -52,7 +52,9 @@
     <h2>What it does</h2>
     <div class="grid">
       <div class="card"><h3>⚡ One-click Game Boost</h3>
-        <ul><li>High performance power plan</li><li>Windows Game Mode on</li><li>Closes the background apps <em>you</em> pick</li><li>Auto-boosts when a full-screen game starts, restores 2 min after you quit</li><li>"Restore normal" undoes everything</li></ul></div>
+        <ul><li>High performance power plan, or Best performance power mode on laptops without it</li><li>Windows Game Mode on</li><li>Your game gets Above-normal CPU priority</li><li>Background apps go into Efficiency mode, the same as Task Manager's (never voice chat, streaming, launchers or anti-cheat)</li><li>Games use the fast graphics card on laptops with two</li><li>Closes the background apps <em>you</em> pick, and can reopen them afterwards</li><li>Auto-boosts when a game starts; games it has seen before are recognised in seconds</li><li>"Restore normal" undoes everything</li></ul></div>
+      <div class="card"><h3>🎮 After-game report</h3>
+        <ul><li>Shows what held your game back: the graphics card, CPU, heat, RAM, graphics memory, or a background app</li><li>Gives specific fixes ("lower texture quality one step", "close OneDrive before playing")</li><li>"Ready to play?" check before you start: on battery, low RAM, a busy app, GPU already hot</li></ul></div>
       <div class="card"><h3>📊 Plain-English dashboard</h3>
         <ul><li>Health score 0–100, live every 2 s</li><li>CPU, RAM, GPU, VRAM, GPU temp, disk, network</li><li>Groups processes into real apps: one "Edge", not 25 msedge.exe</li><li>24-hour history</li></ul></div>
       <div class="card"><h3>🔍 Finds the real problem</h3>
@@ -76,11 +78,10 @@
   <section id="virus-scan">
     <h2>Virus scan proof</h2>
     <div class="card">
-      <p style="color:var(--text)"><b>VirusTotal (70+ antivirus engines):</b> <a href="https://www.virustotal.com/gui/file/54f94b9e8788730f76f0556a84730174452fdc13c8fbba16293de7af977622d6">see the full public scan report for FrameReady-Setup-1.0.1.exe</a></p>
-      <p style="margin-top:10px">Result: 68 of 69 engines found nothing. One AI-based engine (Deep Instinct) flags it. New, unsigned apps from small developers often get this kind of false positive. A false-positive report has been sent to the vendor, and the link above always shows the current result.</p>
-      <p style="margin-top:10px"><b style="color:var(--text)">Microsoft Defender:</b> no threats found in the installer or any installed file (definitions 1.463.30.0, scanned 2026-10-29).</p>
-      <p style="margin-top:10px"><b style="color:var(--text)">Check your copy is the genuine one.</b> In PowerShell run <code>Get-FileHash .\FrameReady-Setup-1.0.1.exe</code>. It must match exactly:<br>
-      <code style="word-break:break-all;color:var(--good)">54F94B9E8788730F76F0556A84730174452FDC13C8FBBA16293DE7AF977622D6</code></p>
+      <p style="color:var(--text)"><b>VirusTotal (70+ antivirus engines):</b> <a href="https://www.virustotal.com/gui/file/7dd6c9d40fbb07fc3f4c180ab4ad3e1e766d425fbe159ca4c062c1fb87f5ac2b">see the full public scan report for FrameReady-Setup-1.1.0.exe</a>. The link always shows the current result.</p>
+      <p style="margin-top:10px"><b style="color:var(--text)">Microsoft Defender:</b> no threats found in the installer or any installed file (scanned 2026-10-29).</p>
+      <p style="margin-top:10px"><b style="color:var(--text)">Check your copy is the genuine one.</b> In PowerShell run <code>Get-FileHash .\FrameReady-Setup-1.1.0.exe</code>. It must match exactly:<br>
+      <code style="word-break:break-all;color:var(--good)">7DD6C9D40FBB07FC3F4C180AB4AD3E1E766D425FBE159CA4C062C1FB87F5AC2B</code></p>
       <p style="margin-top:10px">Why is it not code-signed? A signing certificate costs hundreds of dollars a year, which a CA$4.20 app from an independent developer can't cover yet. That's why Windows SmartScreen may warn you. The scans and the hash above let you verify the file yourself.</p>
     </div>
   </section>
@@ -104,6 +105,6 @@
   </section>
 </main>
 
-<footer class="wrap">FrameReady 1.0.1 · Made by an independent developer in Canada · <a href="https://frameready.gumroad.com/">Store</a></footer>
+<footer class="wrap">FrameReady 1.1.0 · Made by an independent developer in Canada · <a href="https://frameready.gumroad.com/">Store</a></footer>
 </body>
 </html>
